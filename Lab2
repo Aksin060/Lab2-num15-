@@ -1,0 +1,8 @@
+a=int(input()) 
+
+compute_y = lambda a: {b: (15 * a**2 - 12 * b if a > b else 13 * b + 10 * a) for b in range(15, 26)}
+
+y_values = compute_y(a)
+
+for b, y in y_values.items():
+    print(f"b={b},y={y}")
